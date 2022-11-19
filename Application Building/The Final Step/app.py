@@ -14,7 +14,7 @@ def hello():
 def index(): 
 
 # NOTE: you must manually set API_KEY below using information retrieved from your IBM Cloud account.
-        API_KEY = "3F37hSWwvdU4e8YiYw1sywqPxaTRoa8OXV0z88TT9UEJ"
+        API_KEY = "API_KEY"
         token_response = requests.post('https://iam.cloud.ibm.com/identity/token', data={"apikey":
         API_KEY, "grant_type": 'urn:ibm:params:oauth:grant-type:apikey'})
         mltoken = token_response.json()["access_token"]
